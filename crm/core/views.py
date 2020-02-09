@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import HttpResponse
 
 # Create your views here.
 def home(request):
@@ -6,4 +6,3 @@ def home(request):
     html_response = "<h1>Bienvenido a crm confival</h1>"
     return HttpResponse(html_response)
 
- 

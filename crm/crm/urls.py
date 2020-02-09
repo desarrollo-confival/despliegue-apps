@@ -15,26 +15,26 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from core.views import home
+from core import views as core_views
 
-urlpatterns = [    
+urlpatterns = [
 
     path('admin/', admin.site.urls),
 
     #core vista bienvenida
-    path('', home.as_view(), name='home')
+    path('', core_views.home, name='home'),
 
-    #app genero 
+    #app genero
     path('genero/', include('genero.urls')),
 
     #app municipio
     path('municipio/', include('municipio.urls')),
-    
+
     #app perfil cliente
     path('perfil/', include('perfil.urls')),
 
 
-    #app origen contacto 
+    #app origen contacto
     path('contacto/', include('origen_contacto.urls')),
 
     #app tipo de documento
@@ -42,7 +42,7 @@ urlpatterns = [
 
     #app clase de documento
     path('clase_documento/', include('clase_documento.urls')),
-    
+
     #app perfil de asesores
     path('perfil_asesor/', include('perfil_asesor.urls')),
 
