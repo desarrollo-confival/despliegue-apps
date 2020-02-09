@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-*pmudwl913f3-rwwwaoz5hs3$t)b&uhfq^6z=edu0ll*8mi*l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['jamuq.pythonanywhere.com', 'localhost', '127.0.0.1']
 
@@ -105,11 +105,11 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 # }
 DATABASES = {
     'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'jamuq$confival_db1',
-    'USER': 'jamuq',
-    'PASSWORD': 'Jjmuesesq10#',
-    'HOST': 'jamuq.mysql.pythonanywhere-services.com',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'jamuq$confival_db1',
+        'USER': 'jamuq',
+        'PASSWORD': 'Jjmuesesq10#',
+        'HOST': 'jamuq.mysql.pythonanywhere-services.com',
     }
 }
 
