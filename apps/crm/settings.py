@@ -25,13 +25,13 @@ SECRET_KEY = '-*pmudwl913f3-rwwwaoz5hs3$t)b&uhfq^6z=edu0ll*8mi*l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jamuq.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    # App django 
+    # App django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,9 +56,9 @@ INSTALLED_APPS = [
     'subitemseguimiento',
     'juridicos.apps.JuridicosConfig',
     'perfiljuridico.apps.PerfiljuridicoConfig',
-    
+
     # App Lista autocompletar filtro en admin
-    'admin_auto_filters', 
+    'admin_auto_filters',
 ]
 
 MIDDLEWARE = [
@@ -95,12 +95,21 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'OPTIONS': {
+#             'read_default_file': 'crm/conexion.cnf',
+#         },
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'read_default_file': 'crm/conexion.cnf',
-        },
+    'ENGINE': 'django.db.backends.mysql',
+    'NAME': 'jamuq$confival_db1',
+    'USER': 'jamuq',
+    'PASSWORD': 'Jjmuesesq10#',
+    'HOST': 'jamuq.mysql.pythonanywhere-services.com',
     }
 }
 
@@ -141,3 +150,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')

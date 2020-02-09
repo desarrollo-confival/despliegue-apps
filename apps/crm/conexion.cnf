@@ -1,8 +1,9 @@
 # my.cnf
 [client]
 local = 'localhost'
-database = 'confival'
-user = 'root'
+database = 'jamuq$confival_db1'
+user = 'jamuq'
 password = ''
-port = '3306'
+port = ''
+host = 'jamuq.mysql.pythonanywhere-services.com'
 default-character-set = utf8
