@@ -15,9 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from core.views import home
 
-urlpatterns = [
+urlpatterns = [    
+
     path('admin/', admin.site.urls),
+
+    #core vista bienvenida
+    path('', home.as_view(), name='home')
 
     #app genero 
     path('genero/', include('genero.urls')),

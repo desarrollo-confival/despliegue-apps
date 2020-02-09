@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     # Apps
     'crm',
+    'core',
     'genero.apps.GeneroConfig',
     'municipio.apps.MunicipioConfig',
     'perfil.apps.PerfilConfig',
